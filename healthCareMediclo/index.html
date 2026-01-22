@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mediclo Care | Klinik Umum Digital Modern</title>
-    
+
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    
+
     <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏥</text></svg>">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏥</text></svg>">
 </head>
+
 <body>
     <!-- Loading Screen -->
     <div class="loading-screen" id="loadingScreen">
@@ -37,18 +41,23 @@
                     <span class="fw-bold">Mediclo</span> Care
                 </div>
             </a>
-            
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <i class="fas fa-bars"></i>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#home"><i class="fas fa-home"></i> Beranda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#layanan"><i class="fas fa-stethoscope"></i> Layanan</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#aidiagnosis"><i class="fas fa-robot"></i> AI Diagnosis</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#konsultasi"><i class="fas fa-video"></i> Telekonsultasi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#apotek"><i class="fas fa-pills"></i> E-Apotek</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#home"><i class="fas fa-home"></i> Beranda</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#layanan"><i class="fas fa-stethoscope"></i>
+                            Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aidiagnosis"><i class="fas fa-robot"></i> AI
+                            Diagnosis</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#konsultasi"><i class="fas fa-video"></i>
+                            Telekonsultasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#apotek"><i class="fas fa-pills"></i> E-Apotek</a>
+                    </li>
                 </ul>
                 <a href="#booking" class="btn-mediclo">
                     <i class="fas fa-calendar-check"></i> Booking Dokter
@@ -95,7 +104,7 @@
                 <div class="col-lg-6">
                     <div class="hero-visual">
                         <div class="visual-circle">
-                            <i class="fas fa-heartbeat"></i>
+                            <img src="asset/img/LIq8WkhPLY2ZsfOPWAoIwMmWm0.png" alt="an image of a doctor">
                         </div>
                     </div>
                 </div>
@@ -158,53 +167,55 @@
                 <h2><i class="fas fa-robot"></i> AI Health Assistant</h2>
                 <p>Diagnosis awal untuk keluhan kesehatan umum</p>
             </div>
-            
+
             <div class="ai-diagnosis-container">
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="ai-control-panel">
                             <h4><i class="fas fa-cogs"></i> Deskripsi Gejala</h4>
-                            
+
                             <div class="category-buttons">
                                 <button class="cat-btn active">Keluhan Umum</button>
                                 <button class="cat-btn">Pernapasan</button>
                                 <button class="cat-btn">Pencernaan</button>
                             </div>
-                            
+
                             <div class="symptom-list" id="symptomList">
                                 <!-- Gejala akan di-load oleh JS -->
                             </div>
-                            
+
                             <button class="btn-diagnose-ai" id="runAIDiagnosis">
                                 <i class="fas fa-brain"></i> Analisis dengan AI
                             </button>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-8">
                         <div class="ai-results-panel">
                             <div class="results-header">
                                 <h4><i class="fas fa-clipboard-check"></i> Hasil Analisis AI</h4>
                             </div>
-                            
+
                             <div class="diagnosis-card">
                                 <div class="diagnosis-header">
                                     <h5 id="diagnosisTitle">Belum Ada Diagnosis</h5>
                                     <span class="diagnosis-badge" id="diagnosisUrgency">-</span>
                                 </div>
-                                
+
                                 <p id="diagnosisDescription">Deskripsikan gejala untuk mendapatkan analisis awal.</p>
-                                
+
                                 <div class="steps">
                                     <div class="step">
                                         <span>1</span>
                                         <p>Konsultasi dengan dokter</p>
-                                        <button class="btn-step" onclick="scrollToSection('booking')">Booking Dokter</button>
+                                        <button class="btn-step" onclick="scrollToSection('booking')">Booking
+                                            Dokter</button>
                                     </div>
                                     <div class="step">
                                         <span>2</span>
                                         <p>Dapatkan resep digital</p>
-                                        <button class="btn-step" onclick="scrollToSection('apotek')">Lihat Apotek</button>
+                                        <button class="btn-step" onclick="scrollToSection('apotek')">Lihat
+                                            Apotek</button>
                                     </div>
                                     <div class="step">
                                         <span>3</span>
@@ -227,7 +238,7 @@
                 <h2><i class="fas fa-video"></i> Telekonsultasi Online</h2>
                 <p>Konsultasi dengan dokter dari rumah</p>
             </div>
-            
+
             <div class="teleconsult-container">
                 <div class="row">
                     <div class="col-lg-8">
@@ -241,7 +252,7 @@
                                 <p>Video Anda</p>
                             </div>
                         </div>
-                        
+
                         <div class="consultation-controls">
                             <button class="ctrl-btn" id="startConsultation">
                                 <i class="fas fa-phone"></i> Mulai Konsultasi
@@ -257,7 +268,7 @@
                             </button>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-4">
                         <div class="doctors-panel">
                             <h4><i class="fas fa-user-md"></i> Dokter Tersedia</h4>
@@ -287,7 +298,7 @@
                 <h2><i class="fas fa-pills"></i> E-Apotek Mediclo</h2>
                 <p>Order obat dengan resep digital, pengiriman cepat</p>
             </div>
-            
+
             <div class="pharmacy-container">
                 <div class="row">
                     <div class="col-lg-4">
@@ -301,7 +312,7 @@
                             </button>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-8">
                         <div class="products-grid" id="productsGrid">
                             <!-- Produk akan di-load oleh JS -->
@@ -319,7 +330,7 @@
                 <h2><i class="fas fa-calendar-alt"></i> Booking Appointment</h2>
                 <p>Jadwalkan kunjungan ke klinik atau konsultasi online</p>
             </div>
-            
+
             <div class="booking-container">
                 <div class="row">
                     <div class="col-lg-8">
@@ -336,13 +347,14 @@
                                 <option>10:00 - 11:00</option>
                                 <option>11:00 - 12:00</option>
                             </select>
-                            <textarea class="form-control" placeholder="Keluhan Anda..." rows="3" id="bookingDescription"></textarea>
+                            <textarea class="form-control" placeholder="Keluhan Anda..." rows="3"
+                                id="bookingDescription"></textarea>
                             <button class="btn-book-submit" id="submitBookingBtn">
                                 <i class="fas fa-calendar-check"></i> Konfirmasi Booking
                             </button>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-4">
                         <div class="booking-summary-panel">
                             <h4><i class="fas fa-receipt"></i> Ringkasan Booking</h4>
@@ -407,8 +419,9 @@
 
     <!-- JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <!-- Main Script -->
     <script src="js/script.js"></script>
 </body>
+
 </html>
