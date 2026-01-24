@@ -1,44 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mediclo Care | Klinik Umum Digital Modern</title>
 
     <!-- CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--Tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Favicon -->
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏥</text></svg>">
+    <link rel="icon" type="image/png" href="asset/img/Favicon.png" />
 </head>
 
 <body>
-    <!-- Loading Screen -->
+    <!-- Loading Screen
     <div class="loading-screen" id="loadingScreen">
-        <div class="loading-content">
-            <div class="loading-logo">
-                <i class="fas fa-heartbeat"></i>
-            </div>
-            <h2>Mediclo Care</h2>
-            <p>Memuat aplikasi...</p>
+      <div class="loading-content">
+        <div class="loading-logo">
+          <i class="fas fa-heartbeat"></i>
         </div>
-    </div>
+        <h2>Mediclo Care</h2>
+        <p>Memuat aplikasi...</p>
+      </div>
+    </div> -->
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-mediclo fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#home">
                 <div class="logo-mediclo">
-                    <i class="fas fa-heartbeat"></i>
-                </div>
-                <div class="brand-text">
-                    <span class="fw-bold">Mediclo</span> Care
+                    <img src="asset/img/logo.png" alt="Mediclo logo" style="width: 250px" />
                 </div>
             </a>
 
@@ -48,15 +47,20 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#home"><i class="fas fa-home"></i> Beranda</a>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home"><i class="fas fa-home"></i> Beranda</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#layanan"><i class="fas fa-stethoscope"></i>
-                            Layanan</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#aidiagnosis"><i class="fas fa-robot"></i> AI
-                            Diagnosis</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#konsultasi"><i class="fas fa-video"></i>
-                            Telekonsultasi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#apotek"><i class="fas fa-pills"></i> E-Apotek</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#layanan"><i class="fas fa-stethoscope"></i> Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aidiagnosis"><i class="fas fa-robot"></i> AI Diagnosis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#konsultasi"><i class="fas fa-video"></i> Telekonsultasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#apotek"><i class="fas fa-pills"></i> E-Apotek</a>
                     </li>
                 </ul>
                 <a href="#booking" class="btn-mediclo">
@@ -76,7 +80,8 @@
                         <span class="hero-highlight">Perawatan</span> Lebih Personal
                     </h1>
                     <p class="hero-subtitle">
-                        Layanan klinik umum digital dengan teknologi AI untuk diagnosis awal dan konsultasi online.
+                        Layanan klinik umum digital dengan teknologi AI untuk diagnosis
+                        awal dan konsultasi online.
                     </p>
                     <div class="hero-buttons">
                         <a href="#aidiagnosis" class="btn-mediclo-primary" id="startDiagnosis">
@@ -103,9 +108,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="hero-visual">
-                        <div class="visual-circle">
-                            <img src="asset/img/Frame 33859.png" alt="an image of a doctor">
-                        </div>
+                        <img src="asset/img/Frame 33859.png" alt="Doctor illustration" class="hero-img" />
                     </div>
                 </div>
             </div>
@@ -113,7 +116,7 @@
     </section>
 
     <!-- Layanan -->
-    <section id="layanan" class="section-mediclo">
+    <section id="layanan" class="section-mediclo rounded-top-1" >
         <div class="container">
             <div class="section-header">
                 <h2><i class="fas fa-star"></i> Layanan Unggulan</h2>
@@ -126,7 +129,10 @@
                             <i class="fas fa-robot"></i>
                         </div>
                         <h4>AI Health Assistant</h4>
-                        <p>Diagnosis awal berbasis AI untuk keluhan umum seperti demam, batuk, dan sakit kepala.</p>
+                        <p>
+                            Diagnosis awal berbasis AI untuk keluhan umum seperti demam,
+                            batuk, dan sakit kepala.
+                        </p>
                         <button class="btn-service" onclick="scrollToSection('aidiagnosis')">
                             Coba Sekarang <i class="fas fa-arrow-right"></i>
                         </button>
@@ -138,7 +144,9 @@
                             <i class="fas fa-video"></i>
                         </div>
                         <h4>Telekonsultasi 24/7</h4>
-                        <p>Konsultasi online dengan dokter kapan saja melalui video call.</p>
+                        <p>
+                            Konsultasi online dengan dokter kapan saja melalui video call.
+                        </p>
                         <button class="btn-service" onclick="scrollToSection('konsultasi')">
                             Mulai Konsultasi <i class="fas fa-arrow-right"></i>
                         </button>
@@ -161,7 +169,7 @@
     </section>
 
     <!-- AI Diagnosis -->
-    <section id="aidiagnosis" class="section-mediclo" style="background: #f8f9fa;">
+    <section id="aidiagnosis" class="section-mediclo" style="background: #f8f9fa">
         <div class="container">
             <div class="section-header">
                 <h2><i class="fas fa-robot"></i> AI Health Assistant</h2>
@@ -193,7 +201,9 @@
                     <div class="col-lg-8">
                         <div class="ai-results-panel">
                             <div class="results-header">
-                                <h4><i class="fas fa-clipboard-check"></i> Hasil Analisis AI</h4>
+                                <h4>
+                                    <i class="fas fa-clipboard-check"></i> Hasil Analisis AI
+                                </h4>
                             </div>
 
                             <div class="diagnosis-card">
@@ -202,20 +212,24 @@
                                     <span class="diagnosis-badge" id="diagnosisUrgency">-</span>
                                 </div>
 
-                                <p id="diagnosisDescription">Deskripsikan gejala untuk mendapatkan analisis awal.</p>
+                                <p id="diagnosisDescription">
+                                    Deskripsikan gejala untuk mendapatkan analisis awal.
+                                </p>
 
                                 <div class="steps">
                                     <div class="step">
                                         <span>1</span>
                                         <p>Konsultasi dengan dokter</p>
-                                        <button class="btn-step" onclick="scrollToSection('booking')">Booking
-                                            Dokter</button>
+                                        <button class="btn-step" onclick="scrollToSection('booking')">
+                                            Booking Dokter
+                                        </button>
                                     </div>
                                     <div class="step">
                                         <span>2</span>
                                         <p>Dapatkan resep digital</p>
-                                        <button class="btn-step" onclick="scrollToSection('apotek')">Lihat
-                                            Apotek</button>
+                                        <button class="btn-step" onclick="scrollToSection('apotek')">
+                                            Lihat Apotek
+                                        </button>
                                     </div>
                                     <div class="step">
                                         <span>3</span>
@@ -292,7 +306,7 @@
     </section>
 
     <!-- E-Apotek -->
-    <section id="apotek" class="section-mediclo" style="background: #f8f9fa;">
+    <section id="apotek" class="section-mediclo" style="background: #f8f9fa">
         <div class="container">
             <div class="section-header">
                 <h2><i class="fas fa-pills"></i> E-Apotek Mediclo</h2>
@@ -335,13 +349,13 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="booking-form">
-                            <input type="text" class="form-control" placeholder="Nama Lengkap" id="bookingName">
-                            <input type="tel" class="form-control" placeholder="Nomor WhatsApp" id="bookingPhone">
+                            <input type="text" class="form-control" placeholder="Nama Lengkap" id="bookingName" />
+                            <input type="tel" class="form-control" placeholder="Nomor WhatsApp" id="bookingPhone" />
                             <select class="form-select" id="bookingDoctor">
                                 <option>dr. Widya Sari (Dokter Umum)</option>
                                 <option>dr. Ario Pratama (Spesialis)</option>
                             </select>
-                            <input type="date" class="form-control" id="bookingDate">
+                            <input type="date" class="form-control" id="bookingDate" />
                             <select class="form-select" id="bookingTime">
                                 <option>09:00 - 10:00</option>
                                 <option>10:00 - 11:00</option>
@@ -354,17 +368,6 @@
                             </button>
                         </div>
                     </div>
-
-                    <div class="col-lg-4">
-                        <div class="booking-summary-panel">
-                            <h4><i class="fas fa-receipt"></i> Ringkasan Booking</h4>
-                            <p><strong>Jenis:</strong> <span id="summaryType">Konsultasi Online</span></p>
-                            <p><strong>Dokter:</strong> <span id="summaryDoctor">-</span></p>
-                            <p><strong>Tanggal & Waktu:</strong> <span id="summaryDateTime">-</span></p>
-                            <hr>
-                            <p><strong>Biaya:</strong> <span id="totalPayment">Rp 60.000</span></p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -374,31 +377,35 @@
     <footer class="footer-mediclo">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="footer-brand">
-                        <h5>Mediclo Care</h5>
-                        <p>Klinik umum digital dengan teknologi terkini.</p>
+                <div class="col-lg-4 mb-4">
+                    <div class="mb-3">
+                        <div class="logo-mediclo">
+                            <h3 class="text-white fw-bold">Mediclo Care</h3>
+                        </div>
                     </div>
+                    <p>Platform kesehatan digital terpercaya dengan teknologi AI untuk diagnosis awal dan konsultasi
+                        dokter profesional.</p>
                 </div>
-                <div class="col-md-4">
-                    <h5>Kontak Kami</h5>
+                <div class="col-lg-4 mb-4">
+                    <h4>Hubungi Kami</h4>
                     <div class="contact-info">
-                        <p><i class="fas fa-phone-alt"></i> (021) 1234-5678</p>
-                        <p><i class="fab fa-whatsapp"></i> +62 812-3456-7890</p>
-                        <p><i class="fas fa-envelope"></i> hello@mediclocare.id</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Jl. Kesehatan Digital No. 1</p>
+                        <p><i class="fas fa-phone"></i> +62 812 3456 7890</p>
+                        <p><i class="fas fa-envelope"></i> hello@mediclo.com</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <h5>Follow Us</h5>
+                <div class="col-lg-4 mb-4">
+                    <h4>Ikuti Kami</h4>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-4">
-                <p>&copy; 2025 Mediclo Care. All rights reserved.</p>
+            <div class="text-center mt-4 pt-4 border-top border-secondary">
+                <p>&copy; 2026 Mediclo Care. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -409,18 +416,13 @@
             <i class="fas fa-bell"></i>
         </div>
         <div class="toast-content">
-            <strong id="toastTitle">Notification</strong>
-            <p id="toastMessage">Message here</p>
+            <h5 id="toastTitle">Notification</h5>
+            <p id="toastMessage" class="mb-0">Message goes here</p>
         </div>
-        <button class="toast-close" onclick="hideNotification()">
-            <i class="fas fa-times"></i>
-        </button>
     </div>
 
-    <!-- JavaScript Libraries -->
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Main Script -->
     <script src="js/script.js"></script>
 </body>
 
